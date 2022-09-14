@@ -51,7 +51,7 @@ this.$emit('logOut');
 
 verifyToken: function () {
 
-return axios.post("https://mision-tic-bank-be.herokuapp.com/refresh/", {refresh: localStorage.getItem("token_refresh")}, {headers: {}})
+return axios.post("https://mision-tic-athena-bank.herokuapp.com/refresh/", {refresh: localStorage.getItem("token_refresh")}, {headers: {}})
 .then((result) => {
 localStorage.setItem("token_access", result.data.access);
 })
