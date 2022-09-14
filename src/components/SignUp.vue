@@ -52,7 +52,7 @@ export default {
   methods:{
               processSignUp: function(){
                       axios.post(
-                            "https://mision-tic-athena-bank.herokuapp.com/user/",
+                            "http://mision-tic-athena-bank.herokuapp.com/user/",
                             this.user,
                             {headers: {}}
                       )
